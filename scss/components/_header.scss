@@ -1,0 +1,39 @@
+@import "../base/variables";
+
+
+/*HEADER*/
+
+
+.logo{
+    div{
+        text-align: center;
+    background-image:url(../img/fondo-color-rosa-agua_69859-14.jpg);
+    }
+}
+
+.lista{
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: circle;
+            background-color: black;
+            li{
+                a{
+                    display: flex;
+                    justify-content: space-around;
+                    text-decoration: wavy;
+                    color: $color-principal;
+                    font-size: 30px;
+                    background-color: black;
+                    animation-name: lista ;
+                
+                    animation-duration: 3s;
+                
+                    animation-timing-function: ease; 
+                }
+            }
+        }
+    }
+}
+

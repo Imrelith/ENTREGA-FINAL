@@ -1,0 +1,286 @@
+@import "../base/variables";
+
+
+/*main*/
+
+
+
+
+
+.fondo {
+    background: linear-gradient(rgba(223, 168, 168, 0.589), rgba(250, 165, 165, 0.541)), url(../img/fondounias.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1 {
+        @include flex(flex, center, center, column);
+        color: $color-principal;
+        font-size: 40px;
+        text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, 4px 2px 20px #CE5937;
+        animation-name: bienvenidos;
+
+        animation-duration: 3s;
+
+        animation-timing-function: ease-in-out;
+    }
+}
+
+.Titulos {
+    div {
+        h2 {
+            color: $color-principal;
+            background-color: rgb(247, 149, 165);
+            font-style: italic;
+            text-align: center;
+            border: 3px solid black;
+            padding: 10px;
+            text-shadow: 4px 3px 0px #7A7A7A, -21px -22px 11px rgba(206, 89, 55, 0);
+        }
+    }
+}
+
+
+.servicios {
+    background-color: rgb(247, 207, 214);
+    display: flex;
+    justify-content: center;
+
+    div {
+        display: inline-block;
+        text-align: center;
+        margin: 50px;
+        border: 3px solid black;
+        padding: 2px;
+        border-radius: 15px;
+
+        a {
+            text-decoration: none;
+            background-color: black;
+            color: $color-principal;
+            font-size: 15px;
+            transition-property: font size;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+
+            &:hover {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            margin-bottom: 20px;
+
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+
+    }
+}
+
+.TituloDos {
+    div {
+        h2 {
+            color: $color-principal;
+            background-color: rgb(247, 149, 165);
+            padding: 10px;
+            font-style: oblique;
+        }
+    }
+}
+
+.producto1 {
+    background-color: rgb(247, 207, 214);
+    display: flex;
+    justify-content: center;
+    
+    div {
+        display: inline-block;
+        text-align: center;
+        margin: 50px;
+        border: 3px solid black;
+        padding: 2px;
+        border-radius: 15px;
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            margin: 15%;
+            transition-property: font size;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+
+            &:hover {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.fixed {
+    position: fixed;
+    right: 3%;
+    bottom: 20%;
+    background-color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
+
+    div {
+        margin-top: 50px;
+
+        h4 {
+            color: black;
+        }
+    }
+}
+
+
+.TituloProducto {
+    color: $color-principal;
+    background-color: rgb(247, 149, 165);
+    padding: 10px;
+    font-style: oblique;
+    border: 3px solid black;
+    text-align: center;
+    text-shadow: 4px 3px 0px #7A7A7A, -21px -22px 11px rgba(206, 89, 55, 0);
+}
+
+.grid-contenedor {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(247, 207, 214);
+    
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+
+        div {
+            @include flex(flex, center, center, column);
+            width: 50%;
+            height: 315px;
+            background-color: rgb(247, 207, 214);
+            border: 3px solid black;
+            border-radius: 15px;
+
+            img {
+                width: 50%;
+                height: 200px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.TituloServicios {
+    color: $color-principal;
+    background-color: rgb(247, 149, 165);
+    font-style: oblique;
+    text-align: center;
+    border: 3px solid black;
+    padding: 10px;
+    text-shadow: 4px 3px 0px #7A7A7A, -21px -22px 11px rgba(206, 89, 55, 0);
+    
+}
+
+
+.Descripcion {
+    h1 {
+        font-size: 50px;
+        text-align: center;
+        background-color: rgb(247, 149, 165);
+        border: 3px solid black;
+        color: $color-principal;
+        font-style: initial;
+        font-style: oblique;
+        
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        background-color: rgb(247, 207, 214);
+        border: 3px solid black;
+        font-style: italic;
+        padding: 120px 120px 120px 120px;
+        
+    }
+}
+
+
+.informacion{
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(247, 207, 214);
+    border: 3px solid black;
+    
+    }
+
+    .formulario{
+        text-align: center;
+        font-size: 30px;
+        background-color: rgb(247, 207, 214);
+        border: 3px solid black;
+        
+    }
+
+    @keyframes bienvenidos {
+        from{
+        margin-left: 100%;
+        width: 300px;
+    
+        }
+        to{
+        margin-left: 0%;
+        width: 100%;
+        }  
+    }
+    
+    
+    @keyframes lista{
+    from{
+        margin-right: 300%;
+        width: 800%;
+    }
+    
+    to{
+        margin-right: 0%;
+        width: 110%;
+    
+    }
+    
+    }

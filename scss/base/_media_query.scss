@@ -1,0 +1,74 @@
+
+
+
+
+@media (max-width: 350px){
+
+    .grid-contenedor .galeria div{
+        height: 500px;
+        width: 100%;
+        margin: auto;
+        
+    }
+
+.logo img{
+    width: 100%;
+    padding: 3rem;
+}
+
+.lista nav ul {
+    flex-direction: column;
+}
+
+
+.lista nav ul li a{
+    font-size: 1rem;
+    
+}
+
+.lista nav ul li{
+    margin: 8px auto;
+}
+
+.fondo{
+    height: 70vh;
+    background:  url(../img/celular.jpg);
+}
+
+.servicios{
+    flex-direction: column;
+    
+}
+
+
+.servicios div img{
+    width: 100%;
+    height: auto;
+}
+
+
+.producto1{
+    flex-direction: column;
+}
+
+.producto1 div img{
+    width: 100%;
+    height: auto;
+}
+
+
+.Descripcion p{
+    padding: 2rem;
+    font-size: 20px;
+}
+
+
+.fixed{
+    display: none;
+}
+
+.Redes{
+    height: 450px;
+}
+
+}
